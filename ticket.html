@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="username"placeholder="first name" required>
+        <input type="text" id="lastname"placeholder="last name" required>
+        <input type="email" id="email"placeholder="email"required>
+        <input type="submit" value="register">
+    </form>
+    
+</body>
+<script> 
+var form =document.getElementById('form')
+form.addEventListener('submit',function(event){
+    event.preventDefault()
+    var username=document.getElementById('username').Value
+console.log(username)
+var lastname=document.getElementById('lastname').Value
+console.log(lastname)
+var email=document.getElementById('email').Value
+console.log(email)
+})
+
+
+
+</script>
+</html>
